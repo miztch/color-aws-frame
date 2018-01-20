@@ -1,2 +1,4 @@
 # color-aws-frame
-Chrome extension change background color of header &amp; footer on AWS Management Console depending on role name or account
+- Google Chrome extension
+  - Changes background color of header and footer on AWS Management Console.
+  - The color depends on the name of role or account.
