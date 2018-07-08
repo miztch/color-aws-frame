@@ -62,8 +62,8 @@ String.prototype.toRGBCode = (function () {
     document.querySelector(s).style.background = background;
   })
 
-  var e = document.querySelectorAll(".nav-menu");
-  for (var i = 0; i < e.length; i++) {
-    e[i].style.background = background;
+  var selectors = document.querySelectorAll(".nav-menu");
+  for (var i = 0; i < selectors.length; i++) {
+    selectors[i].style.background = background;
   }
 })();
