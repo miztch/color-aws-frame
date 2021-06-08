@@ -54,12 +54,13 @@ String.prototype.toRGBCode = (function () {
 (function() {
   'use strict';
 
-  var account = document.querySelector("#nav-usernameMenu .nav-elt-label").textContent;
+  var account = document.querySelector("#nav-usernameMenu").firstElementChild.firstElementChild.textContent;
   var background = account.toRGBCode();
 
-  var selectors = ["#nav-menubar", "#nav-menu-right", "#console-nav-footer"];
+  var selectors = ["#awsc-nav-header", "#console-nav-footer-inner", "#phd-content-container"];
   selectors.forEach(function(s) {
     document.querySelector(s).style.background = background;
+    document.querySelector(s).style.borderColor = background;
   })
 
   var selectors = document.querySelectorAll(".nav-menu");
