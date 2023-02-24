@@ -51,19 +51,19 @@ String.prototype.toRGBCode = (function () {
 // /chame
 
 // header, footerの色を変える
-(function() {
+(function () {
   'use strict';
 
-  var account = document.querySelector("#nav-usernameMenu").firstElementChild.firstElementChild.textContent;
+  var account = document.querySelector("#nav-usernameMenu").textContent;
   var background = account.toRGBCode();
 
-  var selectors = ["#awsc-nav-header", "#console-nav-footer-inner", "#phd-content-container"];
-  selectors.forEach(function(s) {
+  var selectors = ["#awsc-nav-footer-content"];
+  selectors.forEach(function (s) {
     document.querySelector(s).style.background = background;
     document.querySelector(s).style.borderColor = background;
   })
 
-  var selectors = document.querySelectorAll(".nav-menu");
+  var selectors = document.querySelectorAll("[class^='globalNav'], div.awsc-top-below-nav");
   for (var i = 0; i < selectors.length; i++) {
     selectors[i].style.background = background;
   }
