@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Setup ColorAWSFrame</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ColorAWSFrame Settings</h1>
+        <h2>How to change your console appearance</h2>
+        <div class="form-check color_mode">
+            <input class="form-check-input" type="checkbox" value="" id="color_mode_manual">
+            <label class="form-check-label" for="color_mode_manual">
+                I want to select color manually.
+            </label>
+        </div>
+        <br>
+        <div class="manual-color-setting">
+            <h2>Manual color settings</h2>
+            <table class="table table-sm" id="manual_patterns">
+                <thead>
+                    <tr>
+                        <th>Account/User/Role string</th>
+                        <th>Background color(Hex)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="usersetting">
+                        <td><input class="form-control usersetting_id" type="text" name="color_settings"></td>
+                        <td><input class="form-control usersetting_color" type="text" placeholder='#232F3F'></td>
+                        <td><button type="button" class="btn btn-danger delete_row">Delete Row</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary" id="add_row">Add Row</button>
+            <button type="button" class="btn btn-primary" id="save">Save</button>
+            <button type="button" class="btn btn-danger" id="delete_all">Delete All</button>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.0.slim.min.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+
+</html>

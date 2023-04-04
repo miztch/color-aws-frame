@@ -1,0 +1,45 @@
+body {
+    background: #e6f2ff;
+    font-family: -apple-system, "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
+}
+
+.container {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* 初期表示しない */
+.manual-color-setting {
+    display: none;
+}
+
+.manual_patterns {
+    margin-top: 5px;
+}
+
+.usersetting {
+    margin-bottom: 5px;
+}
+
+.usersetting input[type='text'] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.3em;
+    transition: 0.3s;
+    color: #2e2c2c;
+    border: 1px solid #3b414e;
+    border-radius: 4px;
+}
+
+.usersetting input[type='text']:focus {
+    border: 1px solid #2092df;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(173, 219, 247, 0.5);
+}
+
+button {
+    font-size: 14px;
+    padding: 0.3em;
+    border: 1px solid #3b414e;
+    border-radius: 0.2em;
+}
