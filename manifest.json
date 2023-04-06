@@ -19,7 +19,7 @@
     "page": "options/settings.html",
     "open_in_tab": true
   },
-  "permissons": [
+  "permissions": [
     "storage"
   ]
 }

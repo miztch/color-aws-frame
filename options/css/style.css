@@ -8,8 +8,8 @@ body {
     margin-left: 5px;
 }
 
-/* 初期表示しない */
-.manual-color-setting {
+/* 色設定の欄は初期表示せず、JSで切り替える */
+.manual_color_setting {
     display: none;
 }
 
